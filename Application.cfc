@@ -1,5 +1,5 @@
 <cfcomponent>
-
+	
     <cfset this.name = "IDVoterApp">
     <cfset this.applicationTimeout = CreateTimeSpan(0, 0, 30, 0)>
     <cfset this.sessionManagement = true>
@@ -12,9 +12,9 @@
     <cffunction name="onApplicationStart" output="false">
     	<cfset application.DSN = "voters">
 <!---   <cfset application.userDAO = new com.UserDAO(application.DSN)>
-    	<cfset application.userGW = new com.UserGW(application.DSN)>
+    	<cfset application.userGW = new com.UserGW(application.DSN)>--->
     	<cfset application.voterDAO = new com.VoterDAO(application.DSN)>
-    	<cfset application.voterGW = new com.VoterGW(application.DSN)> --->
+    	<!---<cfset application.voterGW = new com.VoterGW(application.DSN)>--->
         <cfreturn true>
     </cffunction>
 
