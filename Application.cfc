@@ -14,7 +14,7 @@
 <!---   <cfset application.userDAO = new com.UserDAO(application.DSN)>
     	<cfset application.userGW = new com.UserGW(application.DSN)>--->
     	<cfset application.voterDAO = new com.VoterDAO(application.DSN)>
-    	<!---<cfset application.voterGW = new com.VoterGW(application.DSN)>--->
+    	<cfset application.voterGW = new com.VoterGW(application.DSN)>
         <cfreturn true>
     </cffunction>
 
